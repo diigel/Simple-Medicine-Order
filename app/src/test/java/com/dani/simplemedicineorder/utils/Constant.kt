@@ -1,4 +1,7 @@
-package com.dani.simplemedicineorder
+package com.dani.simplemedicineorder.utils
+
+import com.dani.simplemedicineorder.data.entity.MedicineOrderListDto
+import com.dani.simplemedicineorder.data.entity.ResponseMedicineOrderDetail
 
 object Constant {
     val medicineOrder1 = MedicineOrderListDto(

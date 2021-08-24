@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SimpleMedicineOrder">
-        <activity android:name=".MedicineOrderActivity">
+        <activity android:name=".ui.MedicineOrderActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MedicineOrderDetailActivity"/>
+        <activity android:name=".ui.MedicineOrderDetailActivity"/>
     </application>
 
 </manifest>

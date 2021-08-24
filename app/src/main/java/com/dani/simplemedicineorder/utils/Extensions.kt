@@ -1,5 +1,6 @@
-package com.dani.simplemedicineorder
+package com.dani.simplemedicineorder.utils
 
+import com.dani.simplemedicineorder.utils.state.ResultState
 import com.google.gson.GsonBuilder
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
@@ -26,7 +27,7 @@ fun <T: Any> ResultState<T>.onSuccess(result: (T) -> Unit) {
     }
 }
 
-fun <T: Any>ResultState<T>.getDataOrNull(): T? {
+fun <T: Any> ResultState<T>.getDataOrNull(): T? {
     return if (this is ResultState.Success) {
         return this.data
     } else {

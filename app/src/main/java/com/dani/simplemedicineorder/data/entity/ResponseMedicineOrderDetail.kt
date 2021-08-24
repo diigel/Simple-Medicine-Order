@@ -1,4 +1,4 @@
-package com.dani.simplemedicineorder
+package com.dani.simplemedicineorder.data.entity
 
 
 import com.google.gson.annotations.SerializedName

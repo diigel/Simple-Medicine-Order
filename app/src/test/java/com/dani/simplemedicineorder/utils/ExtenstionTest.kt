@@ -1,7 +1,8 @@
-package com.dani.simplemedicineorder
+package com.dani.simplemedicineorder.utils
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
+import com.dani.simplemedicineorder.utils.state.ResultState
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.MockWebServer
 import okio.BufferedSource
