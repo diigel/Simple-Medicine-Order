@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:ignore="HardcodedText">
+    tools:ignore="HardcodedText,UseCompoundDrawables">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
                 style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
+                android:layout_marginEnd="60dp"
                 android:gravity="center"
                 android:text="MyMed Detail"
                 android:textColor="@color/white" />
@@ -89,6 +89,7 @@
                     android:text="Order Number" />
 
                 <TextView
+                    android:id="@+id/txt_order_number"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
@@ -102,6 +103,7 @@
                     android:text="Patient Name" />
 
                 <TextView
+                    android:id="@+id/txt_patient_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
@@ -115,6 +117,7 @@
                     android:text="Phone Number" />
 
                 <TextView
+                    android:id="@+id/txt_phone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
@@ -128,6 +131,7 @@
                     android:text="Patient Address" />
 
                 <TextView
+                    android:id="@+id/txt_address"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
@@ -151,14 +155,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="8dp">
+                android:padding="8dp"
+                tools:ignore="UseCompoundDrawables">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Patient Address" />
+                    android:text="Presciption" />
 
                 <ImageView
+                    android:id="@+id/img_presciption"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:maxHeight="120dp"

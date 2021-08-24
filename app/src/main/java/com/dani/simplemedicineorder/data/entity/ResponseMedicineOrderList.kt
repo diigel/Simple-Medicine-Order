@@ -5,15 +5,15 @@ import com.google.gson.annotations.SerializedName
 
 data class ResponseMedicineOrderList(
     @SerializedName("currency")
-    var currency: String?,
+    var currency: String? = "",
     @SerializedName("full_name")
-    var fullName: String?,
+    var fullName: String? = "",
     @SerializedName("id")
-    var id: Int?,
+    var id: Int? = 0,
     @SerializedName("status")
-    var status: String?,
+    var status: String? = "",
     @SerializedName("total_price")
-    var totalPrice: Int?,
+    var totalPrice: Int? = 0,
     @SerializedName("updated_at")
-    var updatedAt: String?
+    var updatedAt: String? = ""
 )
