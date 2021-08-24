@@ -1,0 +1,22 @@
+{
+  "id": "5",
+  "prescription_image": "https://img.1800contacts.com/image/upload/f_auto,q_auto/v1571429939/web/Written-Regular.png",
+  "status": "In Review",
+  "patient": {
+    "id": 1,
+    "full_name": "Edward Joe",
+    "phone_number": "+6212345678"
+  },
+  "address": {
+    "id": "5",
+    "postal_code": "98767",
+    "latitude": 101.123123,
+    "longitude": -6.123123,
+    "first_line": "Menara Palma",
+    "second_line": "Jl. Hr. Rasuna Said Blok X2 No. 6",
+    "note": "Graha Irama",
+    "province": "DKI Jakarta",
+    "district": "South Jakarta",
+    "sub_district": "Setiabudi"
+  }
+}
