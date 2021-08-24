@@ -80,7 +80,3 @@ fun String.apiToDateTime(): String? {
     val rawDate = apiDateFormatItem.parse(this)
     return stringDateFormat.format(rawDate!!)
 }
-
-
-
-
