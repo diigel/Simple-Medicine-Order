@@ -16,11 +16,11 @@ class MedicineOrderViewModel @Inject constructor(private val repository: Medicin
     val medicineOrderList = repository.medicineOrderList.asLiveData(viewModelScope.coroutineContext)
     val medicineOrderDetail = repository.medicineOrderDetail.asLiveData(viewModelScope.coroutineContext)
 
-    override fun medicineOrderList(): Job = viewModelScope.launch {
+    override fun getMedicineOrderList(): Job = viewModelScope.launch {
         repository.getMedicineOrderList()
     }
 
-    override fun medicineOrderDetail(id: Int): Job = viewModelScope.launch {
+    override fun getMedicineOrderDetail(id: Int): Job = viewModelScope.launch {
        repository.getMedicineOrderDetail(id)
     }
 

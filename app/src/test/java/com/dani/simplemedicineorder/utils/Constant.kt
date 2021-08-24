@@ -1,10 +1,10 @@
 package com.dani.simplemedicineorder.utils
 
-import com.dani.simplemedicineorder.data.entity.MedicineOrderListDto
 import com.dani.simplemedicineorder.data.entity.ResponseMedicineOrderDetail
+import com.dani.simplemedicineorder.data.entity.ResponseMedicineOrderList
 
 object Constant {
-    val medicineOrder1 = MedicineOrderListDto(
+    val medicineOrder1 = ResponseMedicineOrderList(
         id = 549,
         status = "Active",
         fullName = "Toni",
@@ -12,7 +12,7 @@ object Constant {
         currency = "IDR",
         updatedAt = "2020-01-01 14:23:08"
     )
-    val medicineOrder2 = MedicineOrderListDto(
+    val medicineOrder2 = ResponseMedicineOrderList(
         id = 597,
         status = "Prescription Rejected",
         fullName = "Wandi",
@@ -20,7 +20,7 @@ object Constant {
         currency = "",
         updatedAt = "2020-02-01 14:32:39"
     )
-    val medicineOrder3 = MedicineOrderListDto(
+    val medicineOrder3 = ResponseMedicineOrderList(
         id = 570,
         status = "In Review",
         fullName = "Hendra",
