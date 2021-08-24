@@ -1,4 +1,4 @@
-package com.dani.simplemedicineorder
+package com.dani.simplemedicineorder.ui
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView

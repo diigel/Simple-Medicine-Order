@@ -1,5 +1,8 @@
-package com.dani.simplemedicineorder
+package com.dani.simplemedicineorder.repository
 
+import com.dani.simplemedicineorder.data.entity.MedicineOrderListDto
+import com.dani.simplemedicineorder.utils.state.ResultState
+import com.dani.simplemedicineorder.data.entity.ResponseMedicineOrderDetail
 import kotlinx.coroutines.flow.StateFlow
 
 interface MedicineOrderRepository {

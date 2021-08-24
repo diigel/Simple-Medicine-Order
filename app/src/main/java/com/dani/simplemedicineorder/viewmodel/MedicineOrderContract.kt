@@ -1,4 +1,4 @@
-package com.dani.simplemedicineorder
+package com.dani.simplemedicineorder.viewmodel
 
 import kotlinx.coroutines.Job
 

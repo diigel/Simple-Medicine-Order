@@ -1,6 +1,10 @@
-package com.dani.simplemedicineorder
+package com.dani.simplemedicineorder.viewmodel
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
+import com.dani.simplemedicineorder.data.Service
+import com.dani.simplemedicineorder.repository.MedicineOrderRepositoryImpl
+import com.dani.simplemedicineorder.utils.*
+import com.dani.simplemedicineorder.utils.mockResponse
 import junit.framework.Assert.assertEquals
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.runBlocking
@@ -10,7 +14,7 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 
-class MedicineOrderListViewModelTest {
+class MedicineOrderViewModelTest {
 
     @get : Rule
     val instantExecutionRule = InstantTaskExecutorRule()
@@ -43,7 +47,11 @@ class MedicineOrderListViewModelTest {
         viewModel.medicineOrderList()
         val actualResult = viewModel.medicineOrderList.getOrAwaitValue()
         val actual = actualResult.getDataOrNull()
-        val expectation = listOf(Constant.medicineOrder1,Constant.medicineOrder2,Constant.medicineOrder3)
+        val expectation = listOf(
+            Constant.medicineOrder1,
+            Constant.medicineOrder2,
+            Constant.medicineOrder3
+        )
 
         println("start result medicine order list ------")
         println(actual?.toJson())

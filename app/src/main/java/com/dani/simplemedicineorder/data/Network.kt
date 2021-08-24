@@ -1,4 +1,4 @@
-package com.dani.simplemedicineorder
+package com.dani.simplemedicineorder.data
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

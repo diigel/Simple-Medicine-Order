@@ -1,4 +1,4 @@
-package com.dani.simplemedicineorder
+package com.dani.simplemedicineorder.ui
 
 import androidx.recyclerview.widget.RecyclerView
 import com.dani.simplemedicineorder.databinding.ItemListMedicineBinding

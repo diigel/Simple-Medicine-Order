@@ -1,6 +1,8 @@
-package com.dani.simplemedicineorder
+package com.dani.simplemedicineorder.repository
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
+import com.dani.simplemedicineorder.data.Service
+import com.dani.simplemedicineorder.utils.*
 import junit.framework.Assert.assertEquals
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.first
@@ -11,7 +13,7 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 
-class MedicineOrderListRepositoryTest {
+class MedicineOrderRepositoryTest {
 
     @get : Rule
     val instantExecutionRule = InstantTaskExecutorRule()
@@ -36,7 +38,6 @@ class MedicineOrderListRepositoryTest {
         mockWebServer.shutdown()
     }
 
-
     @Test
     fun `medicine order list should be success` ()  = runBlocking {
         mockWebServer.mockResponse("medicine-order-list-success-response",200)
@@ -45,7 +46,7 @@ class MedicineOrderListRepositoryTest {
 
         val actual = repository.medicineOrderList.first().getDataOrNull()
 
-        val expectation = listOf(Constant.medicineOrder1,Constant.medicineOrder2,Constant.medicineOrder3)
+        val expectation = listOf(Constant.medicineOrder1, Constant.medicineOrder2, Constant.medicineOrder3)
 
         println("start result medicine order list ------")
         println(actual?.toJson())

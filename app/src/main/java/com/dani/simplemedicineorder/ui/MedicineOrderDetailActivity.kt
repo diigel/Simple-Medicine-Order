@@ -1,4 +1,4 @@
-package com.dani.simplemedicineorder
+package com.dani.simplemedicineorder.ui
 
 import android.os.Bundle
 import android.viewbinding.library.activity.viewBinding

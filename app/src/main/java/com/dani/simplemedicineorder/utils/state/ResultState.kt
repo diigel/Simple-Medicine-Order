@@ -1,4 +1,4 @@
-package com.dani.simplemedicineorder
+package com.dani.simplemedicineorder.utils.state
 
 sealed class ResultState<T : Any>{
     class Loading<T : Any> : ResultState<T>()

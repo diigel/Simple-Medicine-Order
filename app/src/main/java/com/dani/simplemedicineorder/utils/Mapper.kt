@@ -1,4 +1,8 @@
-package com.dani.simplemedicineorder
+package com.dani.simplemedicineorder.utils
+
+import com.dani.simplemedicineorder.utils.state.ResultState
+import com.dani.simplemedicineorder.data.entity.MedicineOrderListDto
+import com.dani.simplemedicineorder.data.entity.ResponseMedicineOrderList
 
 object Mapper {
 

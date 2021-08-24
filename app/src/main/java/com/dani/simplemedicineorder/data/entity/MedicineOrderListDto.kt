@@ -1,4 +1,4 @@
-package com.dani.simplemedicineorder
+package com.dani.simplemedicineorder.data.entity
 
 data class MedicineOrderListDto(
     var id : Int? = 0,
