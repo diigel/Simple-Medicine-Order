@@ -7,7 +7,7 @@ data class ResponseMedicineOrderDetail(
     @SerializedName("address")
     var address: Address?,
     @SerializedName("id")
-    var id: String?,
+    var id: Int?,
     @SerializedName("patient")
     var patient: Patient?,
     @SerializedName("prescription_image")

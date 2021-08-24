@@ -15,7 +15,7 @@ interface Service {
     }
 
     @GET(MEDICINE_ORDER_LIST)
-    suspend fun getMedicineOrderList() : ResponseMedicineOrderList
+    suspend fun getMedicineOrderList() : List<ResponseMedicineOrderList>
 
     @GET(MEDICINE_ORDER_DETAIL)
     suspend fun getMedicineOrderDetail(
